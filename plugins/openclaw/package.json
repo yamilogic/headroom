@@ -1,7 +1,7 @@
 {
   "name": "headroom-openclaw",
   "version": "0.37.0",
-  "description": "Headroom context compression plugin for OpenClaw — 70-90% token savings with zero LLM calls",
+  "description": "Headroom context compression plugin for OpenClaw \u2014 70-90% token savings with zero LLM calls",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,7 +12,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup && node prepare-dist.mjs",
+    "build": "node init && tsup && node prepare-dist.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "node node_modules/@typescript/native/bin/tsc --noEmit"
